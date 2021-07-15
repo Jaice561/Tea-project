@@ -98,6 +98,19 @@ p {
     clear: both;
     display: table;
 }
+.section-title h3{
+    font-family: var(--font-family-secondary);
+    color: var(--color-primary);
+}
+.section-title {
+    margin-bottom: 2rem;
+}
+.section-center {
+    padding: 4rem 0;
+    width: 85vh;
+    margin: 0 auto;
+    max-width: 1170px;
+}
 
 /* 
 ==========
@@ -175,8 +188,31 @@ skills
 .skill:hover .skill-icon {
     transform: translateY(-5px);
 }
-
-
+/* 
+==============
+about 
+==============
+  */
+.about-img,.about-info {
+    padding: 2rem 0;
+}
+.about-picture-container {
+    background: var(--color-primary);
+    border: 0.5rem solid var(--color-primary);
+    max-width: 30rem;
+    overflow: hidden;
+}
+.about-picture {
+    transition: var(--transition);
+}
+.about-picture-container:hover .about-picture {
+    opacity: 0.5;
+    transform: scale(1.2);
+}
+.about-text {
+    max-width: 30rem;
+    color: var(--color-grey-3);
+}
 /* 
 ==========
 media
@@ -219,3 +255,26 @@ skills media
        width: 25%;
     }
  }
+
+ /*
+==============
+about media 
+==============
+ */
+
+@media screen and (min-width: 992px){
+    .section-center{
+        width: 95vw;
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .about-img,.about-info {
+        float: left;
+        width: 50%;
+    }
+    .about-info {
+        padding-left: 1.5rem;
+    }
+}
