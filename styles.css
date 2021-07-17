@@ -225,6 +225,35 @@ about
   color: var(--color-grey-3);
 }
 /* 
+==============
+product 
+==============
+  */
+.products {
+  background: var(--color-grey-5);
+}
+.products article {
+  padding: 2rem 0;
+}
+.product-text {
+  color: var(--color-grey-3);
+  max-width: 26rem;
+}
+.product {
+  margin-bottom: 2rem;
+}
+.product-img {
+  border-radius: var(--radius);
+  margin-bottom: 2rem;
+  height: 17rem;
+  object-fit: cover;
+}
+
+.product-price {
+  color: var(--color-primary);
+}
+
+/* 
 ==========
 media
 ==========
@@ -291,5 +320,37 @@ about media
   }
   .about-info {
     padding-left: 1.5rem;
+  }
+}
+
+/*
+==============
+product media 
+==============
+ */
+@media screen and (min-width: 768px) {
+  .product {
+    float: left;
+    width: 50%;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .product {
+    width: 33.3%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products-info {
+    float: left;
+    width: 30%;
+  }
+  .products-inventory {
+    float: left;
+    width: 70%;
+  }
+  .product {
+    margin-bottom: 0;
+    padding: 1rem;
   }
 }
