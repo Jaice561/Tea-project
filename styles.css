@@ -139,8 +139,11 @@ navbar
   background: var(--color-grey-5);
   z-index: 2;
   box-shadow: 2px 0 2px rgba(0, 0, 0, 0.2);
+  transform: translateX(-100%);
+  transition: var(--transition);
 }
 .showNav {
+  transform: translate(0);
 }
 .navbar-header {
   text-align: right;
